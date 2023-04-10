@@ -2,7 +2,7 @@
   <div class="games-layout">
     <mat-card 
       class="game-card"
-      *ngFor="let game of games"
+      *ngFor="let game of games | async"
       [routerLink]="['/game', game.id]"
     >
       <mat-card-header class="center-content">
@@ -17,7 +17,7 @@
           <span style="font-weight: bold;">Rating:</span> {{ formatRating(game.rating) }}
         </span>
       </mat-card-content>
-    </mat-card>
+    </mat-card> 
   </div>
   <router-outlet></router-outlet>
 </div>

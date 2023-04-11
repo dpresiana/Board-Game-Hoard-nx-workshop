@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   constructor(private http: HttpClient) {}
 
-  title = 'Board Game Hoard';
+  title = 'Board Game Hoardddd';
   games: Observable<Game[]> = this.http.get<Game[]>('/api/games');
   formatRating = formatRating;
 }

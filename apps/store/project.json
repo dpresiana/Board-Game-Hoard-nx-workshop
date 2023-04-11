@@ -89,6 +89,13 @@
           "codeCoverage": true
         }
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "surge dist/apps/store https://joey-purrfection.surge.sh.surge.sh --token 1463712815348a81f4496b9978c25a3b"
+      }
     }
   },
   "tags": ["scope:store", "type:app"]
